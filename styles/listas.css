@@ -208,23 +208,52 @@ header div a:hover {
 }
 
 .footer {
-  /* background-color: rgba(255, 255, 255, 0.7); */
+  background-color: #FF9800;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-top: 1px solid #ddd;
-  color: white;
+  color: darkslategray;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  /*padding-left: 25px;*/
 }
 
 .container-f {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 45px;
   flex-wrap: wrap;
+  margin: auto;
 }
 
+.container {
+  margin: auto;
+}
 
+h5 {
+  font-size: 1.3em;
+}
+
+img.pequena {
+  width: 20px;
+  height: 20px; 
+}
+img {
+  width: 35px;   /* tamanho renderizado */
+  height: 35px;   /* mantém proporção */
+}
+
+ul.list-unstyled 
+{
+  list-style: none; /* Remove os marcadores */
+  padding-left: 0;  /* Remove o recuo padrão */
+}
+
+ul.list-unstyled li a 
+{
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit;        /* Herda a cor do texto do pai */
+}
 
 
 /* RESPONSIVIDADE */
@@ -268,6 +297,14 @@ header div a:hover {
     display: inline-block; /* garante que fiquem lado a lado */
     margin-right: 5px;
   }
+
+  
+img 
+{
+  max-width: 10%;
+  height: auto;
+}
+
 
   /* Container dos botões */
   .form-editar-tarefa-buttons {

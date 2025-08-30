@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 header {
-  background: black;
+  background: rgb(231, 88, 5);
   color: white;
   padding: 10px;
   display: flex;
@@ -113,13 +113,13 @@ tr:nth-child(even) {
 }
 
 .footer {
-  /* background-color: rgba(255, 255, 255, 0.7); */
+  background-color: #FF9800;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-top: 1px solid #ddd;
-  color: white;
+  color: darkslategray;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container-f {
@@ -128,7 +128,26 @@ tr:nth-child(even) {
   gap: 40px;
   flex-wrap: wrap;
 }
+h5 {
+  font-size: 1.3em;
+}
+img 
+{
+  width: 35px;   /* tamanho renderizado */
+  height: 35px;   /* mantém proporção */
+}
 
+ul.list-unstyled 
+{
+  list-style: none; /* Remove os marcadores */
+  padding-left: 0;  /* Remove o recuo padrão */
+}
+
+ul.list-unstyled li a 
+{
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit;        /* Herda a cor do texto do pai */
+}
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
   header div a {
@@ -140,4 +159,8 @@ tr:nth-child(even) {
   .container-f {
     display: none;
   }
+}
+img {
+  width: 35px;   /* tamanho renderizado */
+  height: 35px;   /* mantém proporção */
 }
